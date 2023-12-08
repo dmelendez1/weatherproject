@@ -50,31 +50,31 @@ async function selectionChange() {
     forecast.forEach(weatherInfo => displayWeatherInfo(weatherInfo))
 }
 
-function displayWeatherInfo(weatherInfo) {
+
     
     function displayWeatherInfo(weatherInfo) {
         let table = document.getElementById('weatherInfo');
         
         let row = table.insertRow();
         
-        // Display Name
+        // Name
         let nameCell = row.insertCell();
         nameCell.textContent = weatherInfo.name;
     
-        // Display Temperature
+        //Temperature
         let tempCell = row.insertCell();
         tempCell.textContent = `Temperature: ${weatherInfo.temperature} ${weatherInfo.temperatureUnit}`;
     
-        // Display Winds
+        // Winds
         let windsCell = row.insertCell();
         windsCell.textContent = `Winds: ${weatherInfo.winds}`;
     
-        // Display Short Forecast
+        // shortForecast
         let forecastCell = row.insertCell();
         forecastCell.textContent = weatherInfo.shortForecast;
     }
     
    
-}
+
 
  
